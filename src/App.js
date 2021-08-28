@@ -9,6 +9,12 @@ import AppContext from './store/AppContext'
 import styled from 'styled-components'
 import Alpaca from './assets/alpaca'
 
+const Heading = styled.h1`
+  @media (max-width: 425px) {
+    text-align: center;
+  }
+`
+
 const Container = styled.div`
   display: flex;
   justify-content: center;
@@ -16,6 +22,10 @@ const Container = styled.div`
 const PanelContainer = styled.div`
   display: flex;
   flex-direction: row;
+  @media (max-width: 425px) {
+    flex-direction: column;
+    height: 600px;
+  }
 `
 
 const GitHubLink = styled.div`
@@ -133,7 +143,7 @@ function App() {
     >
       <Container>
         <Layout>
-          <h1>ALPACA GENERATOR</h1>
+          <Heading>ALPACA GENERATOR</Heading>
           <PanelContainer>
             <PreviewPanel />
             <CustomizePanel />

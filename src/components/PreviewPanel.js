@@ -12,6 +12,15 @@ const Container = styled.div`
   height: 300px;
 `
 
+const Previewer = styled.div`
+  position: 'absolute';
+  width: 300px;
+  height: 300px;
+  @media (max-width: 425px) {
+    left: auto;
+  }
+`
+
 const Img = styled.img`
   width: 300px;
   position: absolute;
@@ -30,10 +39,10 @@ const PreviewPanel = () => {
 
   return (
     <Container>
-      <div id='preview-alpaca' style={{ position: 'absolute', left: 0, width: '300px', height: '300px' }}>
+      <Previewer id='preview-alpaca'>
         {alpacaBodyPart}
         <Img src={Alpaca.nose.image} alt={Alpaca.nose.name} />
-      </div>
+      </Previewer>
     </Container>
   )
 }
