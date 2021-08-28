@@ -1,6 +1,5 @@
 import './App.css'
 import * as htmlToImage from 'html-to-image'
-import { saveAs } from 'file-saver'
 import { useState } from 'react'
 
 import Layout from './components/Layout'
@@ -111,7 +110,11 @@ function App() {
     var containerToCapture = document.getElementById('preview-alpaca')
 
     htmlToImage.toPng(containerToCapture).then(function (dataUrl) {
-      saveAs(dataUrlToBlob(dataUrl), 'alpach.png')
+      const data = URL.createObjectURL(dataUrlToBlob(dataUrl))
+      var link = document.createElement('a')
+      link.href = data
+      link.download = 'alpaca.png'
+      link.click()
     })
   }
 
