@@ -29,9 +29,11 @@ const PreviewPanel = () => {
   })
 
   return (
-    <Container id='preview-alpaca'>
-      {alpacaBodyPart}
-      <Img src={Alpaca.nose.image} alt={Alpaca.nose.name} />
+    <Container>
+      <div id='preview-alpaca' style={{ position: 'absolute', left: 0, width: '300px', height: '300px' }}>
+        {alpacaBodyPart}
+        <Img src={Alpaca.nose.image} alt={Alpaca.nose.name} />
+      </div>
     </Container>
   )
 }
