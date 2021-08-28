@@ -19,6 +19,16 @@ const PanelContainer = styled.div`
   flex-direction: row;
 `
 
+const GitHubLink = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+  a {
+    display: flex;
+    align-items: center;
+  }
+`
+
 const ActionHolder = styled.div`
   display: flex;
   padding: 16px 0 0 0;
@@ -129,6 +139,12 @@ function App() {
             <button onClick={downloadClickHandler}>Download</button>
             <button onClick={randomClickHandler}>Random</button>
           </ActionHolder>
+          <GitHubLink>
+            <a href='https://github.com/byteBanana' target='_blank' rel='noreferrer'>
+              <img src='/bytebananalogo.png' alt='Github' width='48' />
+              View code in Github
+            </a>
+          </GitHubLink>
         </Layout>
       </Container>
     </AppContext.Provider>
