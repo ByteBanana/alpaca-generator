@@ -1,5 +1,5 @@
 import Alpaca from '../assets/alpaca'
-import { useContext, useRef } from 'react'
+import { useContext } from 'react'
 
 import AppContext from '../store/AppContext'
 import styled from 'styled-components'
