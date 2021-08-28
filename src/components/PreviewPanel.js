@@ -10,6 +10,7 @@ const Container = styled.div`
   flex: 1;
   position: relative;
   height: 300px;
+  max-width: 300px;
 `
 
 const Previewer = styled.div`

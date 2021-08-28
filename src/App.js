@@ -124,6 +124,7 @@ function App() {
       var link = document.createElement('a')
       link.href = data
       link.download = 'alpaca.png'
+      link.target = '_blank'
       link.click()
     })
   }
