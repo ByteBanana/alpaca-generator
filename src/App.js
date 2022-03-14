@@ -154,7 +154,7 @@ function App() {
             <button onClick={randomClickHandler}>Random</button>
           </ActionHolder>
           <GitHubLink>
-            <a href='https://github.com/byteBanana' target='_blank' rel='noreferrer'>
+            <a href='https://github.com/bytesBanana' target='_blank' rel='noreferrer'>
               <img src='/bytebananalogo.png' alt='Github' width='48' />
               View code in Github
             </a>
